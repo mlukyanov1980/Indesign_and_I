@@ -8,4 +8,4 @@ git init
 git add .
 git commit -m "КОММЕНТАРИЙ"
 
-тест 
+тест 2
