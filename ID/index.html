@@ -2,12 +2,51 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- custom css -->
 	<link rel="stylesheet" href="normalize.css">	
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<!-- boxicons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
 	<title>Indesign и Я</title>
+
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+ 
+		$(function() {
+		 
+		$(window).scroll(function() {
+		 
+		if($(this).scrollTop() != 0) {
+		 
+		$('#toTop').fadeIn();
+		 
+		} else {
+		 
+		$('#toTop').fadeOut();
+		 
+		}
+		 
+		});
+		 
+		$('#toTop').click(function() {
+		 
+		$('body,html').animate({scrollTop:0},800);
+		 
+		});
+		 
+		});
+		 
+		</script>
 </head>
 <body>
 
@@ -22,6 +61,7 @@
 	<li><a href="#">СКРИПТЫ</a></li>
 	<li><a href="#">ПРОФИЛИ</a></li>
 	<li><a href="#">ССЫЛКИ</a></li>
+	<li><a href="#contacts">КОНТАКТЫ</a></li>
 	
 </ul>
 
@@ -53,8 +93,26 @@
 </div>
 
 <div id="footer">
-Подвал
+
+	<div class="footer-box">
+		<h3>Контакты</h3>
+		<div class="social">
+			<a href="#" name="contacts"><i class='bx bxl-vk'></i></a>
+			<a href="#"><i class='bx bxl-telegram' ></i></a>
+			<a href="#"><i class='bx bx-envelope'></i></a>
+		</div>
+	</div>
+
+	<!-- copyright -->
+	<div class="copyright">
+	<p>2023 @ Все права защищены</p>
+	</div>
+
 </div>
+
+</div>
+
+<DIV ID = "toTop" > ^ Наверх </ DIV >
 	
 </body>
 </html>
